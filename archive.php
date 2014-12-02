@@ -11,7 +11,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main works-index" role="main">
 
 
 		<?php if ( have_posts() ) : ?>
@@ -72,7 +72,7 @@ get_header(); ?>
                             if (has_post_thumbnail()){
                             ?>
                             <article class="works-item <?php echo custom_taxonomies_terms_links($post->ID); ?>">
-                                <figure class="index-poster">
+                                <figure class="index-works">
                                     <a href="<?php echo get_the_permalink(); ?>" title="Click and See <?php echo esc_attr(get_the_title()); ?>">
                                         <?php the_post_thumbnail('index-thumb'); ?>
                                     </a>
