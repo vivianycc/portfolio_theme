@@ -38,18 +38,7 @@ jQuery(document).ready(function($){
     $('.tax-stack li:has(input:checkbox:not(:checked))').removeClass('active');
     });
 
-    var $container = $('#main').isotope({
-      // main isotope options
-      itemSelector: 'article',
-      layoutMode: 'fitColumns',
-      // options for cellsByRow layout mode
-      fitColumns: {
-        columnWidth: 200,
-        rowHeight: 150
-      },
-      // options for masonry layout mode
-      
-})
+    
 
 
 });
