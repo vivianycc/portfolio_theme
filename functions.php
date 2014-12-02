@@ -111,7 +111,7 @@ wp_enqueue_style('portfolio_fontawesome', 'http://netdna.bootstrapcdn.com/font-a
   
 wp_enqueue_style( 'portfolio-layout-style' , get_template_directory_uri() . '/layouts/sidebar-content.css');
 
-add_image_size( 'index-thumb', 300, 300, true);
+add_image_size( 'index-thumb', 300, 9999, false);
 add_image_size( 'works-thumb', 200, 200, true);
 add_image_size( 'large',9999, 200, true );
 add_image_size( 'worksimage');
