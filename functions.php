@@ -134,8 +134,16 @@ function works_scripts() {
         wp_enqueue_script( 'isotope-settings', get_stylesheet_directory_uri() . '/js/isotope.settings.js', array('isotope-lib'), 11112014, false );
     }
 }   
-
 add_action( 'wp_enqueue_scripts', 'works_scripts' );
+
+function index_masonry_scripts() {
+    
+        wp_enqueue_script( 'isotope-lib', get_stylesheet_directory_uri() . '/js/isotope.min.js', array('jquery'), 11112014, false );
+        wp_enqueue_script( 'isotope-masonry', get_stylesheet_directory_uri() . '/js/isotope.masonry.js', array('isotope-lib'), 11112014, false );
+   
+}   
+add_action( 'wp_enqueue_scripts', 'index_masonry_scripts' );
+
 
 // Output all terms as classes for filtering with Isotope
 function custom_taxonomies_terms_links($post_ID){
