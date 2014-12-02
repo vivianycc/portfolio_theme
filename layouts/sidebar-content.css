@@ -79,14 +79,29 @@ div.entry-content{
         float: right;
         margin-left: -230px;
         padding-left: 230px;
+
     }
+    .index-box {
+    display:block;
+    float:left;
+    max-width: 300px;
+    max-width: 30rem;
+    padding: 1rem;
+    margin: 1rem;
+    background: #fff;
+    background: hsl(0, 0%, 100%);
+    max-height: 300px;
+    max-height: 30rem;
+    overflow: hidden;
+    }
+}
 
 /*index-box*/
 
 
 .index-box {
 	display:block;
-	float:right;
+	float:left;
     max-width: 300px;
     max-width: 30rem;
     padding: 1rem;
