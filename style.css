@@ -1,9 +1,9 @@
 /*
 Theme Name: portfolio
-Theme URI: http://underscores.me/
-Author: Underscores.me
-Author URI: http://underscores.me/
-Description: Description
+Theme URI: https://github.com/chrysophyta/portfolio
+Author: Vivian Chen
+Author URI: http://vivianychen.ca/isma309
+Description: This is a theme designed for portfolio
 Version: 1.0-wpcom
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -687,7 +687,7 @@ header
 .comment-navigation .nav-next,
 .paging-navigation .nav-next,
 .post-navigation .nav-next {
-	float: right;
+	float: left;
 	text-align: right;
 	width: 50%;
 }
@@ -1140,8 +1140,11 @@ object {
     border: none;
 }
 
+/*
+-----------------------------------------------
+Works page
+-----------------------------------------------*/
 
-/* reviews archive page*/
 .works-index {
     margin: 2rem;
 }
