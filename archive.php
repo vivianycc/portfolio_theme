@@ -10,8 +10,16 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-        
-        <nav class="filter-boxes">
+
+		<main id="main" class="site-main works-index" role="main">
+
+
+		<?php if ( have_posts() ) : ?>
+
+			<header class="page-header">
+				
+			</header><!-- .page-header -->
+			<nav class="filter-boxes">
                 <div class="tax-stack">
                     <h3 class="filter-title">Year </h3>
                     <div class = "option-set">
@@ -53,18 +61,6 @@ get_header(); ?>
                     
                 </div>
             </nav>
-          
-
-		<main id="main" class="site-main works-index" role="main">
-
-
-
-		<?php if ( have_posts() ) : ?>
-
-			<header class="page-header">
-				
-			</header><!-- .page-header -->
-			
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
