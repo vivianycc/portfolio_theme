@@ -46,8 +46,7 @@ bottom:0px;
 width: 100%;
 }
 
-.entry-header,
-.entry-meta,
+.entry-header,  
 .entry-footer,
 .tag-links,
 .post-navigation,
@@ -60,7 +59,7 @@ width: 100%;
     margin: 0 auto;
 }
 div.entry-content{
-	margin-left: 200px;
+	margin: 2rem;
 	
 }
 

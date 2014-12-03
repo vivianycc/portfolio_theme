@@ -673,24 +673,37 @@ header
 .site-main .comment-navigation,
 .site-main .paging-navigation,
 .site-main .post-navigation {
-	margin: 0 0 1.5em;
-	overflow: hidden;
+        font-size: 18px;
+        font-size: 1.8rem;
+        font-family: 'Lato', sans-serif;
+        color: #000;
+        color: hsl(0, 0%, 0%);
 }
-
 .comment-navigation .nav-previous,
 .paging-navigation .nav-previous,
 .post-navigation .nav-previous {
-	float: left;
 	width: 50%;
+        float: left;
+        padding-right: 15%;
 }
-
 .comment-navigation .nav-next,
 .paging-navigation .nav-next,
 .post-navigation .nav-next {
-	float: left;
+        width: 50%;	
+        float: right;
+        padding-left: 15%;
 	text-align: right;
-	width: 50%;
 }
+
+.nav-indicator { 
+    margin-bottom: 1em; 
+}
+
+.nav-previous h1,
+.nav-next h1 { 
+    font-weight: 900; 
+}
+                
 
 /*--------------------------------------------------------------
 6.0 Accessibility
@@ -799,53 +812,17 @@ header
 /*--------------------------------------------------------------
 10.1 Posts and pages
 --------------------------------------------------------------*/
-.sticky {
-	display: block;
-}
-
-.hentry {
-	margin: 0 0 1.5em;
-}
-
-.byline,
-.updated:not(.published) {
-	display: none;
-}
-
-.single .byline,
-.group-blog .byline {
-	display: inline;
-}
-
-.page-content,
-.entry-content,
-.entry-summary {
-	margin: 2rem 2rem 0;
-}
-
-.page-links {
-	clear: both;
-	margin: 0 0 1.5em;
-}
-
-/*--------------------------------------------------------------
-10.2 Asides
---------------------------------------------------------------*/
-.blog .format-aside .entry-title,
-.archive .format-aside .entry-title {
-	display: none;
-}
-
 .entry-title {
     margin: 0 0 2rem;
     font-weight: 900;
+    font-family:'Playfair+Display';
     font-size: 40px;
     font-size: 4rem;
     line-height: 1.3em;
     color: #000;
     color: hsl(0, 0%, 0%);
-}
 
+}
 .entry-content a { 
     text-decoration: underline; 
 }
@@ -951,6 +928,43 @@ header
         line-height: 1.5em;
     }
 }
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 1.5em;
+}
+
+.byline,
+.updated:not(.published) {
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 2rem 2rem 2rem 2rem;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
+	display: none;
+}
+
+
+
+
+
 
 /* Meta */
 .category-list {
@@ -1003,6 +1017,21 @@ header
 .entry-footer a {
     margin-left: .5rem;
 }
+
+
+
+
+.post-nav-box {
+    padding: 2em 0;
+    margin-bottom: 4em;
+    border-top: hsl(0, 0%, 80%) solid 1px;
+    border-bottom: hsl(0, 0%, 80%) solid 1px; 
+}
+
+/*--------------------------------------------------------------
+10.2 Asides
+--------------------------------------------------------------*/
+
 
 /*--------------------------------------------------------------
 10.3 Comments
