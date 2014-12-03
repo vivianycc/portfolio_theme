@@ -151,7 +151,7 @@ select,
 textarea {
 	 font-size: 18px;
     font-size: 1.8rem;
-    font-family: 'PT Serif', serif;
+    font-family:'Playfair Display', serif;
     line-height: 1.5;
     color: #404040;
     color: hsl(0, 0%, 25%);
@@ -164,7 +164,7 @@ h4,
 h5,
 h6 {
 	clear: right;
-    font-weight: 900;
+    font-weight: 700;
     font-family: 'Lato', sans-serif;
     color: #000;
     color: hsl(0, 0%, 0%);
@@ -653,6 +653,7 @@ header
         color: #000;
         color: hsl(0, 0%, 0%);
         position: relative;
+        padding: 2rem;
 }
 .comment-navigation .nav-previous,
 .paging-navigation .nav-previous,
@@ -677,7 +678,7 @@ header
 
 .nav-previous h1,
 .nav-next h1 { 
-    font-weight: 900; 
+    font-weight: 700; 
 }
                 
 
@@ -790,8 +791,8 @@ header
 --------------------------------------------------------------*/
 .entry-title {
     margin: 0 0 2rem;
-    font-weight: 900;
-    font-family:'Playfair+Display';
+    font-weight: 100;
+    font-family:'Lato';
     font-size: 40px;
     font-size: 4rem;
     line-height: 1.3em;
@@ -904,6 +905,8 @@ header
         line-height: 1.5em;
     }
 }
+
+
 .sticky {
 	display: block;
 }
@@ -969,14 +972,14 @@ header
     font-size: 1.4rem;
 }
 
-.entry-meta a { font-weight: 600; }
+.entry-meta a { font-weight: 300; }
 
 .entry-footer {
     margin-top: 3rem;
     margin-bottom: 5rem;
     font-family: 'Lato', sans-serif;
-    font-size: 16px;
-    font-size: 1.6rem;
+    font-size: 15px;
+    font-size: 1.5rem;
     line-height: 2em;
 }
 
@@ -995,6 +998,14 @@ header
     margin-left: .5rem;
 }
 
+.continue-reading {
+    margin: 0 4rem;
+    font-weight: 900;
+    font-size: 20px;
+    font-size: 2rem;
+}
+
+.continue-reading i { margin-left: .5em; }
 
 
 
@@ -1019,6 +1030,22 @@ header
 
 .bypostauthor {
 	display: block;
+}
+
+.comment-body{
+	padding:3rem;
+	background: #fff;
+	margin:3rem;
+}
+.comment-metadata{
+	font-size: 12px;
+	margin:10px;
+}
+.comment-author.img.avatar{
+	margin-right: 10px;
+}
+.comment-respond{
+	margin-top: 10rem;
 }
 
 /*--------------------------------------------------------------

@@ -30,9 +30,10 @@ Layout: Sidebar-Content
 .site-info, .site-info a:visited{
 	 background: hsl(0, 0%, 20%);
 	 color:hsl(0, 0%, 80%);
-position: fixed;
-bottom:0px;
-width: 100%;
+        position: fixed;
+        bottom:0px;
+        width: 100%;
+        font-size: 12px;
 }
 
 .entry-header,  
@@ -46,22 +47,7 @@ width: 100%;
     max-width: 100rem;
     padding: 3rem 5rem;
 }
-div.entry-content{
-	margin: 2rem;
-    padding: 5rem;
-    max-width: 1000px;
-    max-width: 100rem;
-    
-	
-}
-.entry-content{
-    margin: 2rem;
-    padding: 5rem;
-    max-width: 1000px;
-    max-width: 100rem;
-    
-    
-}
+
 
 @media screen and (min-width: 1024px) {
     .content-area {
@@ -109,10 +95,21 @@ div.entry-content{
         margin-top: 100px;
     }
     div.entry-content{
-    margin-right:0;
-    overflow-y: 
+    margin: 2rem;
+    padding: 5rem;
+    max-width: 1000px;
+    max-width: 100rem;
     
-}
+    
+    }
+    .entry-content{
+        margin: 2rem;
+        padding: 5rem;
+        max-width: 1000px;
+        max-width: 100rem;
+        
+        
+    }
 }
 
 @media screen and (max-width: 1023px) {
@@ -160,7 +157,7 @@ div.entry-content{
     .site-branding{
         text-align: center;
     }
-    }
+      
 }
 
 @media screen and (min-width: 1160px) and (max-width: 1539px) {
@@ -173,9 +170,9 @@ div.entry-content{
     }
         .index-box {
         display:block;
-        float:left;
-        max-width: 300px;
-        max-width: 30rem;
+        float:right;
+        max-width: 450px;
+        max-width: 45rem;
         padding: 1rem;
         margin: 1rem;
         background: #fff;
@@ -184,6 +181,13 @@ div.entry-content{
         max-height: 60rem;
         overflow: hidden;
         }
+       
+}
+
+@media screen and (max-width: 400px){
+    .entry-content{
+    margin: 0 auto;
+    }
 }
 
 /*index-box*/
@@ -191,9 +195,9 @@ div.entry-content{
 
 .index-box {
 	display:block;
-	float:left;
-    max-width: 300px;
-    max-width: 30rem;
+	float:right;
+    max-width: 450px;
+    max-width: 45rem;
     padding: 1rem;
     margin: 1rem;
     background: #fff;
@@ -202,6 +206,7 @@ div.entry-content{
     max-height: 60rem;
     overflow: hidden;
 }
+
 
 .index-box blockquote.alignleft,
 .index-box blockquote.alignright {

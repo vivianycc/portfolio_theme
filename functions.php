@@ -108,11 +108,11 @@ wp_enqueue_style( 'portfolio-google-fonts', 'http://fonts.googleapis.com/css?fam
 wp_enqueue_style( 'portfolio-google-fonts', 'http://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic' );
                     
 // FontAwesome
-wp_enqueue_style('portfolio_fontawesome', 'http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css');
+wp_enqueue_style('portfolio_fontawesome', 'http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css');
   
 wp_enqueue_style( 'portfolio-layout-style' , get_template_directory_uri() . '/layouts/sidebar-content.css');
 
-add_image_size( 'index-thumb', 300, 9999, false);
+add_image_size( 'index-thumb', 430, 9999, false);
 add_image_size( 'works-thumb', 200, 200, true);
 add_image_size( 'large',9999, 200, true );
 add_image_size( 'worksimage');

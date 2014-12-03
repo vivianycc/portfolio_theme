@@ -5,6 +5,8 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	
+	
 	<div class="index-box" id="index-box">
 		<?php 
 	    if (has_post_thumbnail()) {
@@ -15,6 +17,7 @@
 	        echo '</div>';
 	    }
 		?> 
+	<?php if ( 'post' == get_post_type() ) : ?>
 		<header class="entry-header">
 			<h1 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 
@@ -34,8 +37,12 @@
 			
 		</div><!-- .entry-content -->
 
-		<footer class="entry-footer">
-			<?php portfolio_entry_footer(); ?>
+		<footer class="entry-footer continue-reading">
+    	<?php echo '<a href="' . get_permalink() . '" title="' . __('Continue Reading ', 'portfolio') . get_the_title() . '" rel="bookmark">Continue Reading<i class="fa fa-arrow-circle-o-right"></i></a>'; ?>
 		</footer><!-- .entry-footer -->
+     <?php endif; ?> 
+     <?php if ( 'works' == get_post_type() ) : ?>
+     <?php endif; ?>   
 	</div> <!-- index box close -->
+
 </article><!-- #post-## -->
