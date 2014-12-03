@@ -4,7 +4,7 @@ jQuery(document).ready(function($){
      
       // options for masonry layout mode
       masonry: {
-        columnWidth: 50
+        columnWidth: 80
       }
     })
 
