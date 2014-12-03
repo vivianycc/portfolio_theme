@@ -104,7 +104,8 @@ function portfolio_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'portfolio_scripts' );
 
-wp_enqueue_style( 'portfolio-google-fonts', 'http://fonts.googleapis.com/css?family=Lato:100,300,400,400italic,700,900,900italic|PT+Serif:400,700,400italic,700italic' );
+wp_enqueue_style( 'portfolio-google-fonts', 'http://fonts.googleapis.com/css?family=Lato:100,300,400,400italic,700,900,900italic' );
+wp_enqueue_style( 'portfolio-google-fonts', 'http://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic' );
                     
 // FontAwesome
 wp_enqueue_style('portfolio_fontawesome', 'http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css');
