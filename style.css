@@ -65,6 +65,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	outline: 0;
 	padding: 0;
 	vertical-align: baseline;
+	
 }
 
 html {
@@ -651,6 +652,7 @@ header
         font-family: 'Lato', sans-serif;
         color: #000;
         color: hsl(0, 0%, 0%);
+        position: relative;
 }
 .comment-navigation .nav-previous,
 .paging-navigation .nav-previous,
@@ -658,6 +660,7 @@ header
 	width: 50%;
         float: left;
         padding-right: 15%;
+       
 }
 .comment-navigation .nav-next,
 .paging-navigation .nav-next,
@@ -923,6 +926,7 @@ header
 .entry-content,
 .entry-summary {
 	margin: 2rem 2rem 2rem 2rem;
+
 }
 
 .page-links {
